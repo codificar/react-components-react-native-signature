@@ -14,7 +14,7 @@ add in package.json:
 
 ```javascript
 
-import GenericComponent from "react-native-generic";
+import ReactNativeSignature from "react-native-signature";
 
 <ReactNativeSignature
     titleText="Assine Aki"
