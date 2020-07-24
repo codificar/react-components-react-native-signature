@@ -12,7 +12,7 @@ import SignatureCapture from 'react-native-signature-capture';
 
 import styles from "./styles.js";
 
-class SignatureComponent extends Component {
+class ReactNativeSignature extends Component {
 
     constructor(props) {
         super(props);
@@ -130,4 +130,4 @@ class SignatureComponent extends Component {
 
     }
 }
-export default SignatureComponent;
+export default ReactNativeSignature;

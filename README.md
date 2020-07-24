@@ -16,7 +16,7 @@ add in package.json:
 
 import GenericComponent from "react-native-generic";
 
-<SignatureComponent
+<ReactNativeSignature
     titleText="Assine Aki"
     cleanButtonText="Limpar"
     signButtonText="Assinar"
