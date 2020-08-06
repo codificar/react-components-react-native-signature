@@ -6,7 +6,6 @@ export default StyleSheet.create({
         flex: 1,
     },
     title: {
-        fontFamily: 'Roboto',
         fontSize: 16,
         color: '#2E2E2E',
         alignSelf: 'center',
@@ -15,7 +14,6 @@ export default StyleSheet.create({
         textAlign: 'center'
     },   
     textButton: {
-        fontFamily: "Roboto",
         fontSize: 14,
         color: '#FBFBFB'
     },
