@@ -32,10 +32,11 @@ class ReactNativeSignature extends Component {
     render() {       
         const buttonStyle = StyleSheet.create({
             button: {
+                flex: 1,
                 justifyContent: "center",
                 alignItems: "center",
                 height: 40,
-                width: 250,
+                width: 80,
                 backgroundColor: this.state.buttonsCollor,
                 margin: 10,
                 borderRadius: 4
@@ -44,7 +45,6 @@ class ReactNativeSignature extends Component {
 
         const portraitButtonStyle = StyleSheet.create({
             button: {
-                flex: 1,
                 justifyContent: "center",
                 alignItems: "center",
                 height: 40,
