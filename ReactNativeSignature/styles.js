@@ -22,6 +22,7 @@ export default StyleSheet.create({
         justifyContent: 'center'
     },
     contSecondary: {
+        flex: 1,
         height: '20%',
         backgroundColor: "#fff",
         flexDirection: "row",
@@ -37,6 +38,9 @@ export default StyleSheet.create({
         alignItems: 'center',
         marginTop: 8,
     },
+    signatureArea: {
+        flex: 1,
+    },
     signLine: {
         backgroundColor: "#fff",
         borderBottomWidth: 1,
@@ -45,7 +49,7 @@ export default StyleSheet.create({
         alignSelf: 'center',
         marginBottom: 10
     },
-    signature: {
+    signature: {       
         flex: 1,
         borderColor: '#000033',
         borderWidth: 1

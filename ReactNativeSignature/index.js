@@ -41,12 +41,25 @@ class ReactNativeSignature extends Component {
                 borderRadius: 4
             },
         });
+
+        const portraitButtonStyle = StyleSheet.create({
+            button: {
+                flex: 1,
+                justifyContent: "center",
+                alignItems: "center",
+                height: 40,
+                width: 80,
+                backgroundColor: this.state.buttonsCollor,
+                margin: 5,
+                borderRadius: 4
+            },
+        });
         return (
             <View style={styles.container}>  
                 <View style={styles.contTitle}>
                     <Text style={styles.title}>{this.state.titleText}</Text>
                 </View>
-
+               
                 <SignatureCapture
                     style={styles.signature}
                     ref="sign"
@@ -57,7 +70,8 @@ class ReactNativeSignature extends Component {
                     showTitleLabel={false}
                     viewMode={this.props.orientation} />
 
-                <View style={styles.signLine}></View>
+               
+                <View style={styles.signLine}></View>                
                 {this.props.orientation == 'landscape' ? (
                     <View style={styles.contSecondary}>
                         <TouchableHighlight style={buttonStyle.button}
@@ -69,7 +83,18 @@ class ReactNativeSignature extends Component {
                             <Text style={styles.textButton}>{this.state.cleanButtonText}</Text>
                         </TouchableHighlight>
                     </View>
-                ) : null}
+                ) : 
+                <View style={styles.contSecondary}>
+                <TouchableHighlight style={portraitButtonStyle.button}
+                    onPress={() => { this.saveSign() }} >
+                    <Text style={styles.textButton}>{this.state.signButtonText}</Text>
+                </TouchableHighlight>
+                <TouchableHighlight style={portraitButtonStyle.button}
+                    onPress={() => { this.resetSign() }} >
+                    <Text style={styles.textButton}>{this.state.cleanButtonText}</Text>
+                </TouchableHighlight>
+            </View>
+                }
             </View>
         )
     }
