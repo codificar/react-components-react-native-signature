@@ -84,14 +84,14 @@ class ReactNativeSignature extends Component {
                         </TouchableHighlight>
                     </View>
                 ) : 
-                <View style={styles.contSecondary}>
-                <TouchableHighlight style={portraitButtonStyle.button}
-                    onPress={() => { this.saveSign() }} >
-                    <Text style={styles.textButton}>{this.state.signButtonText}</Text>
-                </TouchableHighlight>
+                <View style={styles.contSecondary}>                
                 <TouchableHighlight style={portraitButtonStyle.button}
                     onPress={() => { this.resetSign() }} >
                     <Text style={styles.textButton}>{this.state.cleanButtonText}</Text>
+                        </TouchableHighlight>
+                <TouchableHighlight style={portraitButtonStyle.button}
+                    onPress={() => { this.saveSign() }} >
+                    <Text style={styles.textButton}>{this.state.signButtonText}</Text>
                 </TouchableHighlight>
             </View>
                 }
