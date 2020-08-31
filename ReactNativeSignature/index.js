@@ -74,14 +74,14 @@ class ReactNativeSignature extends Component {
                 <View style={styles.signLine}></View>                
                 {this.props.orientation == 'landscape' ? (
                     <View style={styles.contSecondary}>
-                        <TouchableHighlight style={buttonStyle.button}
-                            onPress={() => { this.saveSign() }} >
-                            <Text style={styles.textButton}>{this.state.signButtonText}</Text>
-                        </TouchableHighlight>
-                        <TouchableHighlight style={buttonStyle.button}
+                         <TouchableHighlight style={buttonStyle.button}
                             onPress={() => { this.resetSign() }} >
                             <Text style={styles.textButton}>{this.state.cleanButtonText}</Text>
                         </TouchableHighlight>
+                        <TouchableHighlight style={buttonStyle.button}
+                            onPress={() => { this.saveSign() }} >
+                            <Text style={styles.textButton}>{this.state.signButtonText}</Text>
+                        </TouchableHighlight>                       
                     </View>
                 ) : 
                 <View style={styles.contSecondary}>                
